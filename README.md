@@ -1,6 +1,5 @@
 # Single Image Super Resolution in Tensorflow
-Tensorflow implementation of SRGAN presented in [1]. The work presented in the paper is extended using Wasserstein GAN
-propesed in [5] to stabilize training.
+Tensorflow implementation of SRGAN presented in [1].
 
 # Results
 I have trained the model in this way: 

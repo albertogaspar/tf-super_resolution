@@ -40,11 +40,11 @@ that upscales the LR feature maps to produce the SR image is appllied.
  
 - **Adversarial Loss** see [1]
 
-## Small changes to SRGAN in this implementation
+## Some ideas to add to SRGAN
 
 #### One-sided Label Smoothing
 From [6]. When feeding the discriminator, instead of providing 1 and 0 labels, 
-use soften values (0.9, 0.1). It is shown to reduce the networks’ vulnerability.
+use soften values (0.9, 0.0). Not much change so it has not been implemented.
 
 #### Virtual Batch Normalization (VBN)
 From [6]. TODO
@@ -58,7 +58,7 @@ TODO (Not working)
 
 Few changes to the original GAN implementation that can be summarized by the 
 following points ( _I really recommend to check out [6] as it is really well done. Indeed, most of the statements 
-below are taken from there_):  
+below are taken from there_): 
 - Output logit from D (no more sigmoid activation in the final step)
 - Remove log loss from D and G
 - Clip discriminator weights (see _c_ parameter in main_wgan.py).
@@ -80,8 +80,7 @@ you can refer to [7].
 Network](https://arxiv.org/abs/1609.04802) by Christian Ledig, Lucas Theis, Ferenc Huszár, Jose Caballero, Andrew Cunningham,
 Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz, Zehan Wang, Wenzhe Shi.
 
-[2] [Perceptual Losses for Real-Time Style Transfer
-and Super-Resolution](https://arxiv.org/abs/1603.08155) by Justin Johnson, Alexandre Alahi, Li Fei-Fei.
+[2] [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155) by Justin Johnson, Alexandre Alahi, Li Fei-Fei.
 
 [3] [Understanding deep image representations by inverting them](https://arxiv.org/abs/1412.0035) by A. Mahendran, A. Vedaldi.
 

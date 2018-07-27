@@ -10,9 +10,9 @@ I have trained the model in this way:
 
 |  Inputx4 (LR, cubic) | SRResNet (90k, MSE) | SRGAN (70k, MSE) | SRGAN (40k, VGG) | Target (HR)|
 | ------------- |:----------------:| ----------------:|:----------------:| ----------:|
-| ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_001x4.png)      | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_001_SRResNet_MSE_90k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_001_SRGAN_MSE_70k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_001_SRGAN_VGG_40k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_001-targets.png) |
-| ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_003x4.png)      | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_003_SRResNet_MSE_90k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_003_SRGAN_MSE_70k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_003_SRGAN_VGG_40k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_003-targets.png) |
-| ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_005x4.png)      | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_005_SRResNet_MSE_90k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_005_SRGAN_MSE_70k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_005_SRGAN_VGG_40k_ac.png) | ![alt text](/home/alberto/PycharmProjects/tf-sr/results/img_005-targets.png) |
+| ![alt text](./results/img_001x4.png)      | ![alt text](./results/img_001_SRResNet_MSE_90k_ac.png) | ![alt text](./results/img_001_SRGAN_MSE_70k_ac.png) | ![alt text](./results/img_001_SRGAN_VGG_40k_ac.png) | ![alt text](./results/img_001-targets.png) |
+| ![alt text](./results/img_003x4.png)      | ![alt text](./results/img_003_SRResNet_MSE_90k_ac.png) | ![alt text](./results/img_003_SRGAN_MSE_70k_ac.png) | ![alt text](./results/img_003_SRGAN_VGG_40k_ac.png) | ![alt text](./results/img_003-targets.png) |
+| ![alt text](./results/img_005x4.png)      | ![alt text](./results/img_005_SRResNet_MSE_90k_ac.png) | ![alt text](./results/img_005_SRGAN_MSE_70k_ac.png) | ![alt text](./results/img_005_SRGAN_VGG_40k_ac.png) | ![alt text](./results/img_005-targets.png) |
  
 In order to obtain even better results we should train the model way more but still, with that few iteartions 
 we are able to achieve good results. Notice that the VGG loss image might sometimes look worst then the one obtained 
@@ -73,6 +73,7 @@ you can refer to [7].
 ### Some more Info 
 - If you see a starnge checkboard patterns in the generated image and you are interested in understanding that behaviour have a look at 
  this great blog post [8].
+- [https://github.com/brade31919/SRGAN-tensorflow](https://github.com/brade31919/SRGAN-tensorflow) an other implementation of the same paper. I have taken inspiration from this.
 
 ## References
 [1] [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial
